@@ -6,7 +6,7 @@ window.DRAMATIC_DESI = {
       "Theatre and short film rooted in the South Asian Indian subcontinent community.",
     about:
       "The Dramatic Desi is a group that stages periodic theatre plays and short films—stories that speak to, and from, the South Asian Indian subcontinent community. We chase comedy, drama, and everything over-the-top in between.",
-    email: "hello@dramaticdesi.org",
+    email: "dramaticdesi42@gmail.com",
   },
   show: {
     presenter: "The Dramatic Desi Presents",
