@@ -120,8 +120,27 @@ a:hover {
 }
 
 @media (max-width: 560px) {
+  .site-header {
+    height: auto;
+    min-height: var(--header-h);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.65rem 0.9rem 0.55rem;
+    row-gap: 0.35rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
   .nav {
-    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.85rem;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
   }
 }
 
@@ -197,8 +216,19 @@ a:hover {
     var(--hero-image);
   background-size: cover;
   background-position: center 55%;
+  background-repeat: no-repeat;
   transform: scale(1.04);
   animation: hero-breathe 14s var(--ease) infinite alternate;
+}
+
+@media (max-width: 720px) {
+  /* Portrait phones crop cover; fit full stage so all three silhouettes stay visible */
+  .hero__media {
+    background-size: contain;
+    background-position: center 32%;
+    transform: none;
+    animation: none;
+  }
 }
 
 .hero__wash {
