@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dramatic Desi — Theatre &amp; Short Film</title>
+    <meta
+      name="description"
+      content="The Dramatic Desi presents Khayali Doctor — a Hinglish comedy adapted from a Molière classic. November 13 at 7:00 PM | The Grand | Ritz Theater, Escondido."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dramatic Desi presents Khayali Doctor" />
+    <meta
+      property="og:description"
+      content="A Hinglish comedy adapted from a Molière classic. A hypochondriac father, a house full of secrets, parody songs, and no shortage of twists. Nov 13, 7:00 PM — The Grand | Ritz Theater, Escondido."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="#top">Dramatic Desi</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#show">Show</a>
+        <a href="#about">About</a>
+        <a href="#involved">Get involved</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Dramatic Desi">
+        <div class="hero__media" aria-hidden="true">
+          <div class="hero__wash"></div>
+          <div class="hero__grain"></div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-reveal>Theatre · Short film</p>
+          <h1 class="hero__brand" data-reveal data-reveal-delay="1">
+            Dramatic Desi
+          </h1>
+          <p class="hero__lede" data-reveal data-reveal-delay="2">
+            Stories from the South Asian Indian subcontinent community—on stage
+            and on screen.
+          </p>
+          <div class="hero__actions" data-reveal data-reveal-delay="3">
+            <a class="btn btn--primary" href="#show">See Khayali Doctor</a>
+            <a class="btn btn--ghost" href="#involved">Get involved</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="show" id="show" aria-labelledby="show-title">
+        <div class="show__inner">
+          <p class="show__presenter" data-bind="presenter" data-reveal>
+            The Dramatic Desi Presents
+          </p>
+          <h2 class="show__title" id="show-title" data-bind="title" data-reveal>
+            Khayali Doctor
+          </h2>
+          <p class="show__tagline" data-bind="tagline" data-reveal>
+            A Hinglish comedy that will ilaaj your soul.
+          </p>
+
+          <div class="show__meta" data-reveal>
+            <p>
+              <span data-bind="runtime">approx. 85 minutes</span>
+              <span class="show__dot" aria-hidden="true">·</span>
+              <span data-bind="datetime">November 13 at 7:00 PM</span>
+            </p>
+            <p data-bind="venue">The Grand | Ritz Theater, Escondido</p>
+          </div>
+
+          <div class="show__actions" data-reveal>
+            <a
+              class="btn btn--primary"
+              data-ticket-btn
+              href="#tickets"
+              >Get tickets</a
+            >
+          </div>
+
+          <div class="show__body" data-bind-html="synopsis" data-reveal></div>
+
+          <p class="show__credit" data-bind="credit" data-reveal></p>
+
+          <aside class="tickets" id="tickets" data-reveal>
+            <h3 class="tickets__title">Tickets</h3>
+            <p class="tickets__note" data-ticket-note>
+              Tickets will be announced soon. Check back here, or reach out and
+              we’ll make sure you’re first to know.
+            </p>
+            <p class="tickets__when">
+              <strong data-bind="datetime">November 13 at 7:00 PM</strong><br />
+              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span>
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__inner" data-reveal>
+          <h2 id="about-title">About the group</h2>
+          <p data-bind="about">
+            The Dramatic Desi is a group that stages periodic theatre plays and
+            short films—stories that speak to, and from, the South Asian Indian
+            subcontinent community.
+          </p>
+        </div>
+      </section>
+
+      <section class="involved" id="involved" aria-labelledby="involved-title">
+        <div class="involved__inner" data-reveal>
+          <h2 id="involved-title">Get involved</h2>
+          <p>
+            Want to act, write, crew, film, or just help fill the house? We’d
+            love to hear from you.
+          </p>
+          <a class="btn btn--primary" data-bind-mailto href="mailto:hello@dramaticdesi.org"
+            >Say hello</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="#top">Dramatic Desi</a>
+        <span aria-hidden="true"> · </span>
+        <span data-bind="year">2026</span>
+      </p>
+    </footer>
+
+    <script src="js/content.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
