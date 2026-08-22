@@ -20,6 +20,27 @@ Show and group copy live in [`js/content.js`](js/content.js):
 - Set `show.ticketUrl` to your ticketing link when ready (leave `""` for “tickets announced soon”)
 - Update `group.email` for the contact CTA
 
+## Hero backdrop (red / gold)
+
+The hero uses Desi stage silhouettes (kurta, saree, modern violinist) against a red-curtain stage. Two color grades ship in [`assets/`](assets/):
+
+| File | Mood |
+|------|------|
+| `hero-stage-red.jpg` | Crimson / red haze (**default**, currently live) |
+| `hero-stage-gold.jpg` | Warm gold / brass spotlight fill |
+
+To switch, edit `--hero-image` near the top of [`css/styles.css`](css/styles.css):
+
+```css
+/* Red (default) */
+--hero-image: url("../assets/hero-stage-red.jpg");
+
+/* Or gold */
+--hero-image: url("../assets/hero-stage-gold.jpg");
+```
+
+Comment out one line and uncomment the other (or change the URL). Keep only one active.
+
 ## GitHub Pages
 
 1. Push this repo to GitHub

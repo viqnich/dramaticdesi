@@ -13,6 +13,9 @@
   --font-body: "Outfit", "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --header-h: 4rem;
+  /* Hero backdrop: red (default) or gold — see README */
+  --hero-image: url("../assets/hero-stage-red.jpg");
+  /* --hero-image: url("../assets/hero-stage-gold.jpg"); */
 }
 
 *,
@@ -191,9 +194,9 @@ a:hover {
       rgba(110, 18, 32, 0.45) 40%,
       rgba(15, 12, 11, 0.7) 100%
     ),
-    url("https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=2400&q=80");
+    var(--hero-image);
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 55%;
   transform: scale(1.04);
   animation: hero-breathe 14s var(--ease) infinite alternate;
 }
