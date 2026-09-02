@@ -93,12 +93,27 @@ a:hover {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
   color: inherit;
   text-decoration: none;
+}
+
+.logo__mark {
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 0.35rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.logo__text {
+  line-height: 1;
 }
 
 .nav {
@@ -131,6 +146,11 @@ a:hover {
 
   .logo {
     font-size: 1rem;
+  }
+
+  .logo__mark {
+    width: 2rem;
+    height: 2rem;
   }
 
   .nav {
@@ -454,11 +474,30 @@ a:hover {
   color: var(--ink-muted);
 }
 
+.site-footer__brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0;
+}
+
 .site-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: inherit;
   text-decoration: none;
   font-family: var(--font-display);
   font-weight: 600;
+}
+
+.site-footer__logo {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
 }
 
 .site-footer a:hover {

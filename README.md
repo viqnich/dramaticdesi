@@ -29,6 +29,8 @@ The hero uses Desi stage silhouettes (kurta, saree, modern violinist) against a 
 | `hero-stage-red.jpg` | Crimson / red haze (**default**, currently live) |
 | `hero-stage-gold.jpg` | Warm gold / brass spotlight fill |
 
+Group logo: [`assets/dd-logo.png`](assets/dd-logo.png) — used in the header, footer, and browser tab.
+
 To switch, edit `--hero-image` near the top of [`css/styles.css`](css/styles.css):
 
 ```css

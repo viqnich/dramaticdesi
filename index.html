@@ -21,13 +21,23 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/dd-logo.png" type="image/png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
-      <a class="logo" href="#top">Dramatic Desi</a>
+      <a class="logo" href="#top">
+        <img
+          class="logo__mark"
+          src="assets/dd-logo.png"
+          alt=""
+          width="40"
+          height="40"
+        />
+        <span class="logo__text">Dramatic Desi</span>
+      </a>
       <nav class="nav" aria-label="Primary">
         <a href="#show">Show</a>
         <a href="#about">About</a>
@@ -131,8 +141,17 @@
     </main>
 
     <footer class="site-footer">
-      <p>
-        <a href="#top">Dramatic Desi</a>
+      <p class="site-footer__brand">
+        <a href="#top">
+          <img
+            class="site-footer__logo"
+            src="assets/dd-logo.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+          <span>Dramatic Desi</span>
+        </a>
         <span aria-hidden="true"> · </span>
         <span data-bind="year">2026</span>
       </p>
