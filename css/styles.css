@@ -105,10 +105,9 @@ a:hover {
 }
 
 .logo__mark {
-  width: 2.35rem;
-  height: 2.35rem;
-  border-radius: 0.35rem;
-  object-fit: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -149,8 +148,8 @@ a:hover {
   }
 
   .logo__mark {
-    width: 2rem;
-    height: 2rem;
+    width: 2.15rem;
+    height: 2.15rem;
   }
 
   .nav {
@@ -494,10 +493,9 @@ a:hover {
 }
 
 .site-footer__logo {
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 0.25rem;
-  object-fit: cover;
+  width: 1.85rem;
+  height: 1.85rem;
+  object-fit: contain;
 }
 
 .site-footer a:hover {
