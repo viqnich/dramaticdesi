@@ -36,20 +36,22 @@
     mail.setAttribute("href", `mailto:${group.email}`);
   }
 
-  const ticketBtn = document.querySelector("[data-ticket-btn]");
+  const ticketBtns = document.querySelectorAll("[data-ticket-btn]");
   const ticketNote = document.querySelector("[data-ticket-note]");
-  if (ticketBtn) {
+  ticketBtns.forEach((ticketBtn) => {
     if (show.ticketUrl) {
       ticketBtn.setAttribute("href", show.ticketUrl);
       ticketBtn.setAttribute("target", "_blank");
       ticketBtn.setAttribute("rel", "noopener noreferrer");
-      if (ticketNote) {
-        ticketNote.textContent =
-          "Tickets are available now. Grab yours before the house fills up.";
-      }
     } else {
       ticketBtn.setAttribute("href", "#tickets");
+      ticketBtn.removeAttribute("target");
+      ticketBtn.removeAttribute("rel");
     }
+  });
+  if (ticketNote && show.ticketUrl) {
+    ticketNote.textContent =
+      "Tickets are available now. Grab yours before the house fills up.";
   }
 
   const metaDesc = document.querySelector('meta[name="description"]');
