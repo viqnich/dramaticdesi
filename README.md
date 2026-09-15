@@ -20,9 +20,16 @@ Show and group copy live in [`js/content.js`](js/content.js):
 - Set `show.ticketUrl` to your ticketing link when ready (leave `""` for “tickets announced soon”)
 - Update `group.email` for the contact CTA
 
-## Soft launch (nav / hero buttons)
+## Soft launch (hero-only teaser)
 
-For now the top-right nav (**Show / About / Get involved**) and the hero CTA buttons (**See Khayali Doctor / Get tickets**) are hidden via a short CSS block near the top of [`css/styles.css`](css/styles.css) (look for `Soft launch`). Markup stays in place — delete that CSS block to reveal them again.
+The site currently shows only the hero (logo + brand). Everything else is hidden via a `Soft launch` CSS block near the top of [`css/styles.css`](css/styles.css):
+
+- Top-right nav and hero CTA buttons
+- Show / About / Get involved sections
+- Footer
+- Page scrolling
+
+Markup stays in place. **Delete that entire Soft launch CSS block** when you’re ready to reveal the full site again.
 
 ## Hero backdrop (red / gold)
 

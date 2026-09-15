@@ -18,9 +18,19 @@
   /* --hero-image: url("../assets/hero-stage-gold.jpg"); */
 }
 
-/* Soft launch: hide top nav + hero CTAs. Delete this block to reveal again. */
+/* Soft launch: hero-only teaser. Delete this whole block to reveal the full site again. */
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
 .nav,
-.hero__actions {
+.hero__actions,
+.show,
+.about,
+.involved,
+.site-footer {
   display: none !important;
 }
 
