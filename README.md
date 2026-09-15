@@ -20,6 +20,10 @@ Show and group copy live in [`js/content.js`](js/content.js):
 - Set `show.ticketUrl` to your ticketing link when ready (leave `""` for “tickets announced soon”)
 - Update `group.email` for the contact CTA
 
+## Soft launch (nav / hero buttons)
+
+For now the top-right nav (**Show / About / Get involved**) and the hero CTA buttons (**See Khayali Doctor / Get tickets**) are hidden via a short CSS block near the top of [`css/styles.css`](css/styles.css) (look for `Soft launch`). Markup stays in place — delete that CSS block to reveal them again.
+
 ## Hero backdrop (red / gold)
 
 The hero uses Desi stage silhouettes (kurta, saree, modern violinist) against a red-curtain stage. Two color grades ship in [`assets/`](assets/):

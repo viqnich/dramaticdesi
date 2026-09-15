@@ -18,6 +18,12 @@
   /* --hero-image: url("../assets/hero-stage-gold.jpg"); */
 }
 
+/* Soft launch: hide top nav + hero CTAs. Delete this block to reveal again. */
+.nav,
+.hero__actions {
+  display: none !important;
+}
+
 *,
 *::before,
 *::after {
