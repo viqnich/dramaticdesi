@@ -304,7 +304,7 @@ a:hover {
 
 .hero__lede {
   margin: 1.25rem 0 0;
-  max-width: 28rem;
+  max-width: 20rem;
   font-size: clamp(1.05rem, 2.2vw, 1.2rem);
   line-height: 1.5;
   color: rgba(250, 247, 242, 0.88);
