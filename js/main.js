@@ -15,6 +15,8 @@
     venue: show.venue,
     credit: show.credit,
     about: group.about,
+    groupTagline: group.tagline,
+    heroCue: show.heroCue,
     year: String(show.year),
   };
 

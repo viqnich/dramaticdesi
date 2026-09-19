@@ -3,7 +3,7 @@ window.DRAMATIC_DESI = {
   group: {
     name: "Dramatic Desi",
     tagline:
-      "Theatre and short film rooted in the South Asian Indian subcontinent community.",
+      "Unfiltered, Unapologetic, Unforgettable: Desi stories on stage and screen.",
     about:
       "The Dramatic Desi is a group that stages periodic theatre plays and short films—stories that speak to, and from, the South Asian Indian subcontinent community. We chase comedy, drama, and everything over-the-top in between.",
     email: "dramaticdesi42@gmail.com",
@@ -25,6 +25,7 @@ window.DRAMATIC_DESI = {
       "Khayali Doctor is a Desi stage adaptation of Molière's Le Malade Imaginaire (The Imaginary Invalid), presented by The Dramatic Desi.",
     dateLabel: "November 13",
     timeLabel: "7:00–9:00 PM",
+    heroCue: "Next production · Nov 13",
     doors: "Doors open at 6:00 PM",
     extras: "Food available for purchase",
     venue: "The Grand | Ritz Theater, Escondido",
