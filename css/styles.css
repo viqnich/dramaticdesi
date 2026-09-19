@@ -396,6 +396,18 @@ a:hover {
   color: var(--ink-muted);
 }
 
+.show__poster {
+  margin: 1.75rem 0 0;
+  max-width: 22rem;
+}
+
+.show__poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
 .show__meta {
   margin-top: 1.75rem;
   padding-top: 1.25rem;
@@ -414,6 +426,9 @@ a:hover {
 }
 
 .show__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-top: 1.5rem;
 }
 
@@ -501,6 +516,10 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+.involved__social {
+  margin-top: 1.25rem !important;
+}
+
 /* —— Footer —— */
 .site-footer {
   padding: 2rem clamp(1.25rem, 5vw, 3.5rem) 2.5rem;
@@ -519,7 +538,7 @@ a:hover {
   margin: 0;
 }
 
-.site-footer a {
+.site-footer__brand > a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -535,7 +554,23 @@ a:hover {
   object-fit: contain;
 }
 
-.site-footer a:hover {
+.site-footer__brand > a:hover {
+  color: var(--crimson);
+}
+
+.site-footer__social {
+  margin: 0.75rem 0 0;
+}
+
+.site-footer__social a {
+  color: inherit;
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.site-footer__social a:hover {
   color: var(--crimson);
 }
 

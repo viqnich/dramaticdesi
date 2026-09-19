@@ -18,6 +18,7 @@
     groupTaglineMotto: group.taglineMotto,
     groupTaglineSupport: group.taglineSupport,
     heroCue: show.heroCue,
+    instagramHandle: group.instagramHandle,
     year: String(show.year),
   };
 
@@ -35,10 +36,21 @@
       .join("");
   }
 
-  const mail = document.querySelector("[data-bind-mailto]");
-  if (mail && group.email) {
+  const mailLinks = document.querySelectorAll("[data-bind-mailto]");
+  mailLinks.forEach((mail) => {
+    if (!group.email) return;
     mail.setAttribute("href", `mailto:${group.email}`);
-  }
+    if (mail.hasAttribute("data-bind-email")) {
+      mail.textContent = group.email;
+    }
+  });
+
+  document.querySelectorAll("[data-bind-facebook]").forEach((el) => {
+    if (group.facebook) el.setAttribute("href", group.facebook);
+  });
+  document.querySelectorAll("[data-bind-instagram]").forEach((el) => {
+    if (group.instagram) el.setAttribute("href", group.instagram);
+  });
 
   const ticketBtns = document.querySelectorAll("[data-ticket-btn]");
   const ticketNote = document.querySelector("[data-ticket-note]");

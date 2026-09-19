@@ -9,6 +9,9 @@ window.DRAMATIC_DESI = {
     about:
       "The Dramatic Desi is a group that stages periodic theatre plays and short films—stories that speak to, and from, the South Asian Indian subcontinent community. We chase comedy, drama, and everything over-the-top in between.",
     email: "dramaticdesi42@gmail.com",
+    facebook: "https://www.facebook.com/dramaticdesi",
+    instagram: "https://www.instagram.com/dramaticdesicollective/",
+    instagramHandle: "@dramaticdesicollective",
   },
   show: {
     presenter: "The Dramatic Desi Presents",
@@ -31,6 +34,7 @@ window.DRAMATIC_DESI = {
     doors: "Doors open at 6:00 PM",
     extras: "Food available for purchase",
     venue: "The Grand | Ritz Theater, Escondido",
+    poster: "assets/khayali-doctor-flyer.png",
     /** Set when tickets go live, e.g. "https://…" — leave empty for “coming soon”. */
     ticketUrl:
       "https://www.showpass.com/khayali-doctor-a-desi-comedy-that-will-ilaaj-your-soul/",
