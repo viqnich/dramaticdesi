@@ -48,7 +48,6 @@
       <nav class="nav" aria-label="Primary">
         <a href="#show">Show</a>
         <a href="#about">About</a>
-        <a href="#involved">Get involved</a>
       </nav>
     </header>
 
@@ -146,47 +145,53 @@
       </section>
 
       <section class="about" id="about" aria-labelledby="about-title">
-        <div class="about__inner" data-reveal>
-          <h2 id="about-title">About the group</h2>
-          <p data-bind="about">
-            The Dramatic Desi is a group that stages periodic theatre plays and
-            short films—stories that speak to, and from, the South Asian Indian
-            subcontinent community.
-          </p>
-        </div>
-      </section>
+        <div class="about__inner">
+          <h2 id="about-title" data-reveal>About</h2>
 
-      <section class="involved" id="involved" aria-labelledby="involved-title">
-        <div class="involved__inner" data-reveal>
-          <h2 id="involved-title">Get involved</h2>
-          <p>
-            Want to act, write, crew, film, or just help fill the house? We’d
-            love to hear from you at
-            <a data-bind-mailto data-bind-email href="mailto:dramaticdesi42@gmail.com"
-              >dramaticdesi42@gmail.com</a
-            >.
-          </p>
-          <a class="btn btn--primary" data-bind-mailto href="mailto:dramaticdesi42@gmail.com"
-            >Say hello</a
-          >
-          <p class="involved__social">
-            Follow us on
-            <a
-              href="https://www.facebook.com/dramaticdesi"
-              data-bind-facebook
-              target="_blank"
-              rel="noopener noreferrer"
-              >Facebook</a
+          <div class="about__block" data-reveal>
+            <h3>About the company</h3>
+            <p data-bind="about">
+              The Dramatic Desi is a group that stages periodic theatre plays and
+              short films—stories that speak to, and from, the South Asian Indian
+              subcontinent community.
+            </p>
+          </div>
+
+          <div class="about__block" id="follow" data-reveal>
+            <h3>Follow us</h3>
+            <p>
+              Stay in the loop on
+              <a
+                href="https://www.facebook.com/dramaticdesi"
+                data-bind-facebook
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+              and Instagram
+              <a
+                href="https://www.instagram.com/dramaticdesicollective/"
+                data-bind-instagram
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span data-bind="instagramHandle">@dramaticdesicollective</span></a
+              >.
+            </p>
+          </div>
+
+          <div class="about__block" id="involved" data-reveal>
+            <h3>Get involved</h3>
+            <p>
+              Want to act, write, crew, film, or just help fill the house? We’d
+              love to hear from you at
+              <a data-bind-mailto data-bind-email href="mailto:dramaticdesi42@gmail.com"
+                >dramaticdesi42@gmail.com</a
+              >.
+            </p>
+            <a class="btn btn--primary" data-bind-mailto href="mailto:dramaticdesi42@gmail.com"
+              >Say hello</a
             >
-            and
-            <a
-              href="https://www.instagram.com/dramaticdesicollective/"
-              data-bind-instagram
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span data-bind="instagramHandle">@dramaticdesicollective</span></a
-            >.
-          </p>
+          </div>
         </div>
       </section>
     </main>
