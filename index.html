@@ -6,13 +6,13 @@
     <title>Dramatic Desi — Theatre &amp; Short Film</title>
     <meta
       name="description"
-      content="The Dramatic Desi presents Khayali Doctor — a Hinglish comedy adapted from a Molière classic. November 13 at 7:00 PM | The Grand | Ritz Theater, Escondido."
+      content="The Dramatic Desi presents Khayali Doctor — a Desi comedy adapted from a Molière classic. November 13 · 7:00–9:00 PM | The Grand | Ritz Theater, Escondido."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dramatic Desi presents Khayali Doctor" />
     <meta
       property="og:description"
-      content="A Hinglish comedy adapted from a Molière classic. A hypochondriac father, a house full of secrets, parody songs, and no shortage of twists. Nov 13, 7:00 PM — The Grand | Ritz Theater, Escondido."
+      content="A Desi comedy adapted from a Molière classic. A hypochondriac father, a house full of secrets, parody songs, and no shortage of twists. Nov 13 · 7:00–9:00 PM — The Grand | Ritz Theater, Escondido."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,9 +60,12 @@
             Stories from the South Asian Indian subcontinent community—on stage
             and on screen.
           </p>
-          <div class="hero__actions" data-reveal data-reveal-delay="3">
-            <a class="btn btn--primary" href="#show">See Khayali Doctor</a>
-            <a class="btn btn--ghost" data-ticket-btn href="#tickets">Get tickets</a>
+          <div class="hero__show" data-reveal data-reveal-delay="3">
+            <p class="hero__show-title" data-bind="title">Khayali Doctor</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#show">More info</a>
+              <a class="btn btn--ghost" data-ticket-btn href="#tickets">Tickets</a>
+            </div>
           </div>
         </div>
       </section>
@@ -76,14 +79,15 @@
             Khayali Doctor
           </h2>
           <p class="show__tagline" data-bind="tagline" data-reveal>
-            A Hinglish comedy that will ilaaj your soul.
+            A Desi comedy that will ilaaj your soul.
           </p>
 
           <div class="show__meta" data-reveal>
+            <p data-bind="datetime">November 13 · 7:00–9:00 PM</p>
             <p>
-              <span data-bind="runtime">approx. 85 minutes</span>
+              <span data-bind="doors">Doors open at 6:00 PM</span>
               <span class="show__dot" aria-hidden="true">·</span>
-              <span data-bind="datetime">November 13 at 7:00 PM</span>
+              <span data-bind="extras">Food available for purchase</span>
             </p>
             <p data-bind="venue">The Grand | Ritz Theater, Escondido</p>
           </div>
@@ -93,7 +97,7 @@
               class="btn btn--primary"
               data-ticket-btn
               href="#tickets"
-              >Get tickets</a
+              >Tickets</a
             >
           </div>
 
@@ -108,7 +112,10 @@
               we’ll make sure you’re first to know.
             </p>
             <p class="tickets__when">
-              <strong data-bind="datetime">November 13 at 7:00 PM</strong><br />
+              <strong data-bind="datetime">November 13 · 7:00–9:00 PM</strong><br />
+              <span data-bind="doors">Doors open at 6:00 PM</span>
+              <span class="show__dot" aria-hidden="true">·</span>
+              <span data-bind="extras">Food available for purchase</span><br />
               <span data-bind="venue">The Grand | Ritz Theater, Escondido</span>
             </p>
           </aside>

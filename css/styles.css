@@ -313,11 +313,23 @@ a:hover {
   color: rgba(250, 247, 242, 0.88);
 }
 
+.hero__show {
+  margin-top: 1.75rem;
+}
+
+.hero__show-title {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--brass-soft);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.75rem;
 }
 
 /* —— Show —— */

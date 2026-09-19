@@ -3,14 +3,15 @@
   if (!data) return;
 
   const { group, show } = data;
-  const datetime = `${show.dateLabel} at ${show.timeLabel}`;
+  const datetime = `${show.dateLabel} · ${show.timeLabel}`;
 
   const textMap = {
     presenter: show.presenter,
     title: show.title,
     tagline: show.tagline,
-    runtime: show.runtime,
     datetime,
+    doors: show.doors,
+    extras: show.extras,
     venue: show.venue,
     credit: show.credit,
     about: group.about,
