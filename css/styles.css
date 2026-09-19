@@ -18,22 +18,6 @@
   /* --hero-image: url("../assets/hero-stage-gold.jpg"); */
 }
 
-/* Soft launch: hero-only teaser. Delete this whole block to reveal the full site again. */
-html,
-body {
-  overflow: hidden;
-  height: 100%;
-}
-
-.nav,
-.hero__actions,
-.show,
-.about,
-.involved,
-.site-footer {
-  display: none !important;
-}
-
 *,
 *::before,
 *::after {

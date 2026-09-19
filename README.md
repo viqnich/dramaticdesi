@@ -22,14 +22,7 @@ Show and group copy live in [`js/content.js`](js/content.js):
 
 ## Soft launch (hero-only teaser)
 
-The site currently shows only the hero (logo + brand). Everything else is hidden via a `Soft launch` CSS block near the top of [`css/styles.css`](css/styles.css):
-
-- Top-right nav and hero CTA buttons
-- Show / About / Get involved sections
-- Footer
-- Page scrolling
-
-Markup stays in place. **Delete that entire Soft launch CSS block** when you’re ready to reveal the full site again.
+Previously used for a hero-only teaser (nav, CTAs, lower sections, and scrolling hidden via CSS). That block has been removed — the full site is live again. If you ever need a temporary teaser, re-add a Soft launch hide block near the top of [`css/styles.css`](css/styles.css).
 
 ## Hero backdrop (red / gold)
 

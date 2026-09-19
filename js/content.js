@@ -28,7 +28,8 @@ window.DRAMATIC_DESI = {
     timeLabel: "7:00 PM",
     venue: "The Grand | Ritz Theater, Escondido",
     /** Set when tickets go live, e.g. "https://…" — leave empty for “coming soon”. */
-    ticketUrl: "",
+    ticketUrl:
+      "https://www.showpass.com/khayali-doctor-a-desi-comedy-that-will-ilaaj-your-soul/",
     year: 2026,
   },
 };
