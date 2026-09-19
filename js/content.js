@@ -2,6 +2,8 @@
 window.DRAMATIC_DESI = {
   group: {
     name: "Dramatic Desi",
+    taglineMotto: "Unfiltered, Unapologetic, Unforgettable:",
+    taglineSupport: "Desi stories on stage and screen.",
     tagline:
       "Unfiltered, Unapologetic, Unforgettable: Desi stories on stage and screen.",
     about:

@@ -304,17 +304,22 @@ a:hover {
 
 .hero__lede {
   margin: 1.25rem 0 0;
-  max-width: 20rem;
   font-size: clamp(1.05rem, 2.2vw, 1.2rem);
-  line-height: 1.5;
+  line-height: 1.45;
   color: rgba(250, 247, 242, 0.88);
 }
 
+.hero__lede-motto,
+.hero__lede-support {
+  display: block;
+}
+
 .hero__show {
+  width: fit-content;
+  max-width: 100%;
   margin-top: 2.25rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(250, 247, 242, 0.22);
-  max-width: 28rem;
 }
 
 .hero__show-cue {
