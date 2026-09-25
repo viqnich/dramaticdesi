@@ -8,7 +8,7 @@ window.DRAMATIC_DESI = {
       "Unfiltered, Unapologetic, Unforgettable: Desi stories on stage and screen.",
     about:
       "The Dramatic Desi is a group that stages periodic theatre plays and short films—stories that speak to, and from, the South Asian Indian subcontinent community. We chase comedy, drama, and everything over-the-top in between.",
-    email: "dramaticdesi42@gmail.com",
+    email: "info@dramaticdesi.com",
     facebook: "https://www.facebook.com/dramaticdesi",
     instagram: "https://www.instagram.com/dramaticdesicollective/",
     instagramHandle: "@dramaticdesicollective",
