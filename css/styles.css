@@ -420,9 +420,57 @@ a:hover {
   margin: 0.25rem 0;
 }
 
+.show__seats {
+  margin: 0 0 0.75rem !important;
+  font-weight: 600;
+  color: var(--crimson-deep);
+}
+
 .show__dot {
   margin: 0 0.4rem;
   color: var(--brass);
+}
+
+.show__logistics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.show__logistics-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.show__logistics-list {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--ink-muted);
+}
+
+.show__logistics-list li {
+  margin: 0.55rem 0;
+}
+
+.show__parking-link {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-weight: 600;
+}
+
+.show__parking {
+  margin: 1.25rem 0 0;
+  max-width: 100%;
+}
+
+.show__parking img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 2px;
 }
 
 .show__actions {

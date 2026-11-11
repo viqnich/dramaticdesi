@@ -11,8 +11,13 @@
     tagline: show.tagline,
     datetime,
     doors: show.doors,
-    extras: show.extras,
+    runtime: show.runtime,
+    food: show.food,
+    afterShow: show.afterShow,
+    parking: show.parking,
+    seatsNote: show.seatsNote,
     venue: show.venue,
+    venueAddress: show.venueAddress,
     credit: show.credit,
     about: group.about,
     groupTaglineMotto: group.taglineMotto,
@@ -50,6 +55,13 @@
   });
   document.querySelectorAll("[data-bind-instagram]").forEach((el) => {
     if (group.instagram) el.setAttribute("href", group.instagram);
+  });
+  document.querySelectorAll("[data-bind-venue-url]").forEach((el) => {
+    if (show.venueUrl) {
+      el.setAttribute("href", show.venueUrl);
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener noreferrer");
+    }
   });
 
   const ticketBtns = document.querySelectorAll("[data-ticket-btn]");

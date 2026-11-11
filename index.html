@@ -105,13 +105,53 @@
           </figure>
 
           <div class="show__meta" data-reveal>
-            <p data-bind="datetime">November 13 · 7:00–9:00 PM</p>
-            <p>
-              <span data-bind="doors">Doors open at 6:00 PM</span>
-              <span class="show__dot" aria-hidden="true">·</span>
-              <span data-bind="extras">Food available for purchase</span>
+            <p class="show__seats" data-bind="seatsNote">
+              Nearly sold out — only a few seats left.
             </p>
-            <p data-bind="venue">The Grand | Ritz Theater, Escondido</p>
+            <p data-bind="datetime">November 13 · 7:00 PM</p>
+            <p data-bind="doors">Doors open at 6:00 PM</p>
+            <p data-bind="runtime">About 2 hours and 10 minutes</p>
+            <p>
+              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span><br />
+              <span data-bind="venueAddress">301 E Grand Ave, Escondido, CA 92025</span><br />
+              <a
+                data-bind-venue-url
+                href="https://www.thegrandescondido.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >thegrandescondido.org</a
+              >
+            </p>
+          </div>
+
+          <div class="show__logistics" data-reveal>
+            <h3 class="show__logistics-title">Good to know</h3>
+            <ul class="show__logistics-list">
+              <li data-bind="food">
+                Food and drinks (boxed food) from Naturally Desi Cafe 'n'
+                Catering — enjoy before entering; not allowed inside the theater.
+              </li>
+              <li data-bind="afterShow">Meet the cast and crew after the show.</li>
+              <li>
+                <span data-bind="parking"
+                  >Free street parking and nearby lots around the theater.</span
+                >
+                <a class="show__parking-link" href="assets/grand-parking-map.png"
+                  >View parking map</a
+                >
+              </li>
+            </ul>
+            <figure class="show__parking">
+              <a href="assets/grand-parking-map.png">
+                <img
+                  src="assets/grand-parking-map.png"
+                  alt="Parking map for The Grand | Ritz Theater, Escondido"
+                  width="792"
+                  height="612"
+                  loading="lazy"
+                />
+              </a>
+            </figure>
           </div>
 
           <div class="show__actions" data-reveal>
@@ -134,11 +174,11 @@
               we’ll make sure you’re first to know.
             </p>
             <p class="tickets__when">
-              <strong data-bind="datetime">November 13 · 7:00–9:00 PM</strong><br />
-              <span data-bind="doors">Doors open at 6:00 PM</span>
-              <span class="show__dot" aria-hidden="true">·</span>
-              <span data-bind="extras">Food available for purchase</span><br />
-              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span>
+              <strong data-bind="datetime">November 13 · 7:00 PM</strong><br />
+              <span data-bind="doors">Doors open at 6:00 PM</span><br />
+              <span data-bind="runtime">About 2 hours and 10 minutes</span><br />
+              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span><br />
+              <span data-bind="venueAddress">301 E Grand Ave, Escondido, CA 92025</span>
             </p>
           </aside>
         </div>
