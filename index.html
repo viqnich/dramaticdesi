@@ -52,12 +52,18 @@
     </header>
 
     <main id="main">
-      <section class="hero" id="top" aria-label="Dramatic Desi">
+      <!--
+        OPENING-WEEK HERO (event-forward).
+        After Nov 13: restore brand-first hero — see README “Opening-week hero”.
+        Remove class hero--event and revert this block to brand + quieter show CTA.
+      -->
+      <section class="hero hero--event" id="top" aria-label="Dramatic Desi">
         <div class="hero__media" aria-hidden="true">
           <div class="hero__wash"></div>
           <div class="hero__grain"></div>
         </div>
         <div class="hero__content">
+          <p class="hero__banner" data-reveal>This Friday · November 13</p>
           <div class="hero__brand-block">
             <h1 class="hero__brand" data-reveal data-reveal-delay="1">
               Dramatic Desi
@@ -72,11 +78,16 @@
             </p>
           </div>
           <div class="hero__show" data-reveal data-reveal-delay="3">
-            <p class="hero__show-cue" data-bind="heroCue">Next production · Nov 13</p>
+            <p class="hero__show-cue" data-bind="heroCue">
+              This Friday · Doors 6 PM · Curtain 7 PM
+            </p>
             <p class="hero__show-title" data-bind="title">Khayali Doctor</p>
+            <p class="hero__show-seats" data-bind="seatsNote">
+              Nearly sold out — only a few seats left.
+            </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#show">More info</a>
-              <a class="btn btn--ghost" data-ticket-btn href="#tickets">Tickets</a>
+              <a class="btn btn--primary" data-ticket-btn href="#tickets">Tickets</a>
+              <a class="btn btn--ghost" href="#show">More info</a>
             </div>
           </div>
         </div>

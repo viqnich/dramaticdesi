@@ -302,6 +302,15 @@ a:hover {
   letter-spacing: -0.03em;
 }
 
+.hero__banner {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-soft);
+}
+
 .hero__lede {
   margin: 1.25rem 0 0;
   font-size: clamp(1.05rem, 2.2vw, 1.2rem);
@@ -351,10 +360,38 @@ a:hover {
   color: var(--brass-soft);
 }
 
+.hero__show-seats {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(250, 247, 242, 0.92);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+/* Opening-week event-forward hero — remove .hero--event after the show */
+.hero--event .hero__brand {
+  font-size: clamp(2.4rem, 8vw, 4.25rem);
+}
+
+.hero--event .hero__lede {
+  margin-top: 0.75rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  max-width: 26rem;
+}
+
+.hero--event .hero__show-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--pearl);
+  margin-bottom: 0.45rem;
+}
+
+.hero--event .hero__show-cue {
+  color: var(--brass-soft);
 }
 
 /* —— Show —— */

@@ -30,7 +30,8 @@ window.DRAMATIC_DESI = {
       "Khayali Doctor is a Desi stage adaptation of Molière's Le Malade Imaginaire (The Imaginary Invalid), presented by The Dramatic Desi.",
     dateLabel: "November 13",
     timeLabel: "7:00 PM",
-    heroCue: "Next production · Nov 13",
+    /** Opening week: event-forward cue. After the show, restore e.g. "Next production · …" */
+    heroCue: "This Friday · Doors 6 PM · Curtain 7 PM",
     doors: "Doors open at 6:00 PM",
     runtime: "About 2 hours and 10 minutes",
     food:
