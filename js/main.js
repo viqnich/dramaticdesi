@@ -36,6 +36,63 @@
       .join("");
   }
 
+  const creditsEl = document.querySelector('[data-bind-html="credits"]');
+  if (creditsEl && past) {
+    const blocks = [];
+    if (Array.isArray(past.creative)) {
+      blocks.push(
+        `<ul class="credits__list">${past.creative
+          .map(
+            (row) =>
+              `<li><span class="credits__role">${escapeHtml(
+                row.role
+              )}</span> <span class="credits__names">${escapeHtml(
+                row.names
+              )}</span></li>`
+          )
+          .join("")}</ul>`
+      );
+    }
+    if (past.cast) {
+      blocks.push("<h3>Cast</h3>");
+      if (past.cast.starring) {
+        blocks.push(
+          `<p><span class="credits__role">Starring</span> <span class="credits__names">${escapeHtml(
+            past.cast.starring
+          )}</span></p>`
+        );
+      }
+      if (past.cast.special) {
+        blocks.push(
+          `<p><span class="credits__role">Special appearances</span> <span class="credits__names">${escapeHtml(
+            past.cast.special
+          )}</span></p>`
+        );
+      }
+    }
+    if (Array.isArray(past.crew) && past.crew.length) {
+      blocks.push("<h3>Crew</h3>");
+      blocks.push(
+        `<ul class="credits__list">${past.crew
+          .map(
+            (row) =>
+              `<li><span class="credits__role">${escapeHtml(
+                row.role
+              )}</span> <span class="credits__names">${escapeHtml(
+                row.names
+              )}</span></li>`
+          )
+          .join("")}</ul>`
+      );
+    }
+    if (past.note) {
+      blocks.push(
+        `<p class="credits__note">${escapeHtml(past.note)}</p>`
+      );
+    }
+    creditsEl.innerHTML = blocks.join("");
+  }
+
   const mailLinks = document.querySelectorAll("[data-bind-mailto]");
   mailLinks.forEach((mail) => {
     if (!group.email) return;
@@ -71,6 +128,16 @@
       videoFrame.setAttribute("title", past.videoTitle);
     }
   }
+
+  document.querySelectorAll("[data-bind-program]").forEach((el) => {
+    if (past && past.programPdf) {
+      const inShow = /\/shows\//.test(location.pathname);
+      el.setAttribute(
+        "href",
+        inShow ? `../${past.programPdf}` : past.programPdf
+      );
+    }
+  });
 
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc && group.tagline) {

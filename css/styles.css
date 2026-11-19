@@ -549,6 +549,61 @@ a:hover {
   margin: 0.85rem 0 0;
 }
 
+.archive__credits {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.archive__credits h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.archive__credits h3 {
+  margin: 1.5rem 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.credits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credits__list li {
+  margin: 0.55rem 0;
+  color: var(--ink-muted);
+}
+
+.credits__role {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.credits__names {
+  color: var(--ink);
+}
+
+.credits__note {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.archive__program {
+  margin: 1.5rem 0 0;
+}
+
 .archive__body {
   margin-top: 2.5rem;
 }

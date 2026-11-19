@@ -40,6 +40,47 @@ window.DRAMATIC_DESI = {
     videoUrl: "https://youtu.be/Oib6QIX5sQo",
     videoEmbed: "https://www.youtube.com/embed/Oib6QIX5sQo",
     videoTitle: "Post-show reactions",
+    programPdf: "assets/khayali-doctor-credits.pdf",
+    creative: [
+      { role: "Written & Directed by", names: "Sanjay Nichani" },
+      { role: "Produced by", names: "Anuradha Atri, Sanjay Nichani" },
+      { role: "Assistant Director", names: "Anuradha Atri" },
+    ],
+    cast: {
+      starring:
+        "Champ Iyengar, Rashmi Savgur, Manupriya Sharma, Divya Bandyopadhyay, Mohan Koujalagi, Shubham Mehta, Rohan Sharma, Sachin Chawla",
+      special:
+        "Anuradha Atri, Paramita Datta, Sanjay Nichani",
+    },
+    crew: [
+      {
+        role: "Music, Projections, Video & Sound Design",
+        names: "Sanjay Nichani",
+      },
+      { role: "Costume Director", names: "Mamta Malhotra" },
+      { role: "Promotion, Marketing & MC", names: "Sonal Kanodia" },
+      {
+        role: "Technical Operations",
+        names: "Rohan Bharadwaj, Sanjay Nichani",
+      },
+      { role: "Hair & Makeup", names: "Riya Agrawal" },
+      {
+        role: "Program Booklet & Cover Art",
+        names: "Rohan Bharadwaj",
+      },
+      { role: "Dance Director", names: "Paramita Datta" },
+      { role: "Stage Manager", names: "Gayathri Srinivasan" },
+      {
+        role: "Videography & Photography",
+        names: "Ravi Sooderlu, Bryan Dahl",
+      },
+      {
+        role: "Production Support",
+        names:
+          "Santosh Nichani, Jayanth Bharadwaj, Manjinder Sandhu, Sachin Chawla",
+      },
+    ],
+    note: "Original play music and visuals created using AI tools.",
     year: 2026,
   },
 };
