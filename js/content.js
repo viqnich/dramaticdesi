@@ -13,41 +13,33 @@ window.DRAMATIC_DESI = {
     instagram: "https://www.instagram.com/dramaticdesicollective/",
     instagramHandle: "@dramaticdesicollective",
   },
-  show: {
-    presenter: "The Dramatic Desi Presents",
+  /** Hero “next up” — update when the next title/date is set. */
+  next: {
+    cue: "Next production",
+    title: "Coming soon",
+    blurb: "New stories are on the way. Follow us for the announcement.",
+  },
+  /** Most recent / archived production (homepage card + archive page). */
+  past: {
+    presenter: "The Dramatic Desi Presented",
     title: "Khayali Doctor",
     tagline: "A Desi comedy that will ilaaj your soul.",
     short:
-      "The Dramatic Desi presents Khayali Doctor — a Desi comedy adapted from a Molière classic. Friday, November 13 at The Grand | Ritz Theater, Escondido. Doors 6:00 PM · Show 7:00 PM.",
+      "Khayali Doctor — a Desi comedy adapted from a Molière classic — played November 13, 2026 at The Grand | Ritz Theater, Escondido.",
     synopsis: [
       "Meet Rasiklal Mehta — a man who has never met a symptom he didn't like. Convinced he's one sneeze away from the grave, obsessed with his pulse, his pills, and his own imagined mortality, Rasiklal has a plan for his daughter's future — one that has everything to do with keeping a doctor in the family, and nothing to do with love. She has other ideas.",
       "Behind the pill bottles and the daily doctor's visits, this house is running on secrets — some worn right on the sleeve, some buried a lot deeper. Everyone in this family thinks they know exactly who everyone else is. They don't. And by the time the truth comes out, at least one of them will wish they'd never gone looking for it.",
       "Khayali Doctor takes a Molière classic and reimagines it as a full-blooded, full-color Desi comedy — mistaken identities, Bollywood parody numbers, and a family about to get a lot more honest than it ever intended to be.",
-      "Expect a full house of scheming, lovesick, and thoroughly overdramatic characters, a soundtrack of parody songs and dance, and comic chaos from the first scene to the last.",
-      "Come find out who's really sick in this house, and who's just been pretending.",
     ],
     credit:
       "Khayali Doctor is a Desi stage adaptation of Molière's Le Malade Imaginaire (The Imaginary Invalid), presented by The Dramatic Desi.",
-    dateLabel: "November 13",
-    timeLabel: "7:00 PM",
-    /** Opening week: event-forward cue. After the show, restore e.g. "Next production · …" */
-    heroCue: "This Friday · Doors 6 PM · Curtain 7 PM",
-    doors: "Doors open at 6:00 PM",
-    runtime: "About 2 hours and 10 minutes",
-    food:
-      "Food and drinks (boxed food) from Naturally Desi Cafe 'n' Catering — enjoy before entering; not allowed inside the theater.",
-    afterShow: "Meet the cast and crew after the show.",
-    parking:
-      "Free street parking and nearby lots around the theater.",
-    parkingMap: "assets/grand-parking-map.png",
+    dateLabel: "November 13, 2026",
     venue: "The Grand | Ritz Theater, Escondido",
-    venueAddress: "301 E Grand Ave, Escondido, CA 92025",
-    venueUrl: "https://www.thegrandescondido.org/",
-    seatsNote: "Nearly sold out — only a few seats left.",
     poster: "assets/khayali-doctor-flyer.png",
-    /** Set when tickets go live, e.g. "https://…" — leave empty for “coming soon”. */
-    ticketUrl:
-      "https://www.showpass.com/khayali-doctor-a-desi-comedy-that-will-ilaaj-your-soul/",
+    archiveUrl: "shows/khayali-doctor.html",
+    videoUrl: "https://youtu.be/Oib6QIX5sQo",
+    videoEmbed: "https://www.youtube.com/embed/Oib6QIX5sQo",
+    videoTitle: "Post-show reactions",
     year: 2026,
   },
 };

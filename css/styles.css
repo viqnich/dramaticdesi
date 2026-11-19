@@ -212,6 +212,24 @@ a:hover {
   border-color: var(--pearl);
 }
 
+.btn--ghost-ink {
+  background: transparent;
+  color: var(--ink);
+  border-color: rgba(26, 22, 20, 0.35);
+}
+
+.btn--ghost-ink:hover {
+  background: rgba(26, 22, 20, 0.06);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.site-header--solid {
+  background: rgba(235, 233, 230, 0.94);
+  color: var(--ink);
+  box-shadow: 0 1px 0 var(--line);
+}
+
 /* —— Hero —— */
 .hero {
   position: relative;
@@ -360,11 +378,12 @@ a:hover {
   color: var(--brass-soft);
 }
 
-.hero__show-seats {
+.hero__show-blurb {
   margin: 0 0 1rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: rgba(250, 247, 242, 0.92);
+  max-width: 22rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: rgba(250, 247, 242, 0.8);
 }
 
 .hero__actions {
@@ -373,39 +392,37 @@ a:hover {
   gap: 0.75rem;
 }
 
-/* Opening-week event-forward hero — remove .hero--event after the show */
-.hero--event .hero__brand {
-  font-size: clamp(2.4rem, 8vw, 4.25rem);
+.show__dot {
+  margin: 0 0.4rem;
+  color: var(--brass);
 }
 
-.hero--event .hero__lede {
-  margin-top: 0.75rem;
-  font-size: clamp(0.95rem, 2vw, 1.05rem);
-  max-width: 26rem;
-}
-
-.hero--event .hero__show-title {
-  font-size: clamp(2rem, 6vw, 3rem);
-  color: var(--pearl);
-  margin-bottom: 0.45rem;
-}
-
-.hero--event .hero__show-cue {
-  color: var(--brass-soft);
-}
-
-/* —— Show —— */
-.show {
+/* —— Past shows —— */
+.shows {
   background: var(--pearl);
   padding: clamp(4rem, 10vw, 7rem) clamp(1.25rem, 5vw, 3.5rem);
 }
 
-.show__inner {
+.shows__inner {
   max-width: 40rem;
   margin: 0 auto;
 }
 
-.show__presenter {
+.shows h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.shows__card {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.shows__eyebrow {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 500;
@@ -414,7 +431,58 @@ a:hover {
   color: var(--brass);
 }
 
-.show__title {
+.shows__name {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--crimson-deep);
+}
+
+.shows__tagline {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.shows__meta {
+  margin: 1rem 0 0;
+  color: var(--ink);
+}
+
+.shows__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* —— Archive page —— */
+.archive {
+  background: var(--pearl);
+  padding: calc(var(--header-h) + 2.5rem) clamp(1.25rem, 5vw, 3.5rem)
+    clamp(4rem, 9vw, 6rem);
+}
+
+.archive__inner {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.archive__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.archive__title {
   margin: 0.5rem 0 0;
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 4rem);
@@ -424,140 +492,81 @@ a:hover {
   color: var(--crimson-deep);
 }
 
-.show__tagline {
+.archive__tagline {
   margin: 0.85rem 0 0;
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.5vw, 1.45rem);
-  font-weight: 500;
   font-style: italic;
   color: var(--ink-muted);
 }
 
-.show__poster {
-  margin: 1.75rem 0 0;
-  max-width: 22rem;
-}
-
-.show__poster img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 2px;
-}
-
-.show__meta {
-  margin-top: 1.75rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
-  font-size: 1rem;
+.archive__meta {
+  margin: 1.25rem 0 0;
   color: var(--ink);
 }
 
-.show__meta p {
-  margin: 0.25rem 0;
+.archive__poster {
+  margin: 2rem 0 0;
+  max-width: 22rem;
 }
 
-.show__seats {
-  margin: 0 0 0.75rem !important;
-  font-weight: 600;
-  color: var(--crimson-deep);
-}
-
-.show__dot {
-  margin: 0 0.4rem;
-  color: var(--brass);
-}
-
-.show__logistics {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-.show__logistics-title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-}
-
-.show__logistics-list {
-  margin: 0.85rem 0 0;
-  padding-left: 1.15rem;
-  color: var(--ink-muted);
-}
-
-.show__logistics-list li {
-  margin: 0.55rem 0;
-}
-
-.show__parking-link {
-  display: inline-block;
-  margin-left: 0.35rem;
-  font-weight: 600;
-}
-
-.show__parking {
-  margin: 1.25rem 0 0;
-  max-width: 100%;
-}
-
-.show__parking img {
+.archive__poster img {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid var(--line);
   border-radius: 2px;
 }
 
-.show__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
-}
-
-.show__body {
+.archive__video {
   margin-top: 2.5rem;
 }
 
-.show__body p {
+.archive__video h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.archive__video-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #1a1614;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.archive__video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.archive__video p {
+  margin: 0.85rem 0 0;
+}
+
+.archive__body {
+  margin-top: 2.5rem;
+}
+
+.archive__body p {
   margin: 0 0 1.15rem;
   color: var(--ink-muted);
 }
 
-.show__body p:last-child {
-  margin-bottom: 0;
-}
-
-.show__credit {
+.archive__credit {
   margin: 2rem 0 0;
   font-size: 0.92rem;
   color: var(--ink-muted);
   font-style: italic;
 }
 
-.tickets {
-  margin-top: 3rem;
-  padding: 1.75rem 0 0;
-  border-top: 1px solid var(--line);
-}
-
-.tickets__title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.tickets__note {
-  margin: 0.75rem 0 0;
-  color: var(--ink-muted);
-}
-
-.tickets__when {
-  margin: 1.25rem 0 0;
-  color: var(--ink);
+.archive__back {
+  margin: 2.5rem 0 0;
 }
 
 /* —— About —— */

@@ -6,18 +6,18 @@
     <title>Dramatic Desi — Theatre &amp; Short Film</title>
     <meta
       name="description"
-      content="The Dramatic Desi presents Khayali Doctor — a Desi comedy adapted from a Molière classic. November 13 · 7:00–9:00 PM | The Grand | Ritz Theater, Escondido."
+      content="Unfiltered, Unapologetic, Unforgettable: Desi stories on stage and screen."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dramatic Desi presents Khayali Doctor" />
+    <meta property="og:title" content="Dramatic Desi" />
     <meta
       property="og:description"
-      content="A Desi comedy adapted from a Molière classic. A hypochondriac father, a house full of secrets, parody songs, and no shortage of twists. Nov 13 · 7:00–9:00 PM — The Grand | Ritz Theater, Escondido."
+      content="Unfiltered, Unapologetic, Unforgettable: Desi stories on stage and screen."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       property="og:image"
-      content="https://dramaticdesi.com/assets/khayali-doctor-flyer.png"
+      content="https://dramaticdesi.com/assets/dd-logo.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,24 +46,18 @@
         </span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#show">Show</a>
+        <a href="#shows">Shows</a>
         <a href="#about">About</a>
       </nav>
     </header>
 
     <main id="main">
-      <!--
-        OPENING-WEEK HERO (event-forward).
-        After Nov 13: restore brand-first hero — see README “Opening-week hero”.
-        Remove class hero--event and revert this block to brand + quieter show CTA.
-      -->
-      <section class="hero hero--event" id="top" aria-label="Dramatic Desi">
+      <section class="hero" id="top" aria-label="Dramatic Desi">
         <div class="hero__media" aria-hidden="true">
           <div class="hero__wash"></div>
           <div class="hero__grain"></div>
         </div>
         <div class="hero__content">
-          <p class="hero__banner" data-reveal>This Friday · November 13</p>
           <div class="hero__brand-block">
             <h1 class="hero__brand" data-reveal data-reveal-delay="1">
               Dramatic Desi
@@ -78,120 +72,54 @@
             </p>
           </div>
           <div class="hero__show" data-reveal data-reveal-delay="3">
-            <p class="hero__show-cue" data-bind="heroCue">
-              This Friday · Doors 6 PM · Curtain 7 PM
-            </p>
-            <p class="hero__show-title" data-bind="title">Khayali Doctor</p>
-            <p class="hero__show-seats" data-bind="seatsNote">
-              Nearly sold out — only a few seats left.
+            <p class="hero__show-cue" data-bind="nextCue">Next production</p>
+            <p class="hero__show-title" data-bind="nextTitle">Coming soon</p>
+            <p class="hero__show-blurb" data-bind="nextBlurb">
+              New stories are on the way. Follow us for the announcement.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" data-ticket-btn href="#tickets">Tickets</a>
-              <a class="btn btn--ghost" href="#show">More info</a>
+              <a class="btn btn--primary" href="#shows">Past shows</a>
+              <a class="btn btn--ghost" href="#about">Get involved</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="show" id="show" aria-labelledby="show-title">
-        <div class="show__inner">
-          <p class="show__presenter" data-bind="presenter" data-reveal>
-            The Dramatic Desi Presents
-          </p>
-          <h2 class="show__title" id="show-title" data-bind="title" data-reveal>
-            Khayali Doctor
-          </h2>
-          <p class="show__tagline" data-bind="tagline" data-reveal>
-            A Desi comedy that will ilaaj your soul.
-          </p>
-
-          <figure class="show__poster" data-reveal>
-            <img
-              src="assets/khayali-doctor-flyer.png"
-              alt="Khayali Doctor poster — The Dramatic Desi, November 13 at The Grand | Ritz Theater, Escondido"
-              width="793"
-              height="1032"
-              loading="lazy"
-            />
-          </figure>
-
-          <div class="show__meta" data-reveal>
-            <p class="show__seats" data-bind="seatsNote">
-              Nearly sold out — only a few seats left.
+      <section class="shows" id="shows" aria-labelledby="shows-title">
+        <div class="shows__inner">
+          <h2 id="shows-title" data-reveal>Past productions</h2>
+          <article class="shows__card" data-reveal>
+            <p class="shows__eyebrow" data-bind="pastPresenter">
+              The Dramatic Desi Presented
             </p>
-            <p data-bind="datetime">November 13 · 7:00 PM</p>
-            <p data-bind="doors">Doors open at 6:00 PM</p>
-            <p data-bind="runtime">About 2 hours and 10 minutes</p>
-            <p>
-              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span><br />
-              <span data-bind="venueAddress">301 E Grand Ave, Escondido, CA 92025</span><br />
-              <a
-                data-bind-venue-url
-                href="https://www.thegrandescondido.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >thegrandescondido.org</a
+            <h3 class="shows__name" data-bind="pastTitle">Khayali Doctor</h3>
+            <p class="shows__tagline" data-bind="pastTagline">
+              A Desi comedy that will ilaaj your soul.
+            </p>
+            <p class="shows__meta">
+              <span data-bind="pastDate">November 13, 2026</span>
+              <span class="show__dot" aria-hidden="true">·</span>
+              <span data-bind="pastVenue"
+                >The Grand | Ritz Theater, Escondido</span
               >
             </p>
-          </div>
-
-          <div class="show__logistics" data-reveal>
-            <h3 class="show__logistics-title">Good to know</h3>
-            <ul class="show__logistics-list">
-              <li data-bind="food">
-                Food and drinks (boxed food) from Naturally Desi Cafe 'n'
-                Catering — enjoy before entering; not allowed inside the theater.
-              </li>
-              <li data-bind="afterShow">Meet the cast and crew after the show.</li>
-              <li>
-                <span data-bind="parking"
-                  >Free street parking and nearby lots around the theater.</span
-                >
-                <a class="show__parking-link" href="assets/grand-parking-map.png"
-                  >View parking map</a
-                >
-              </li>
-            </ul>
-            <figure class="show__parking">
-              <a href="assets/grand-parking-map.png">
-                <img
-                  src="assets/grand-parking-map.png"
-                  alt="Parking map for The Grand | Ritz Theater, Escondido"
-                  width="792"
-                  height="612"
-                  loading="lazy"
-                />
-              </a>
-            </figure>
-          </div>
-
-          <div class="show__actions" data-reveal>
-            <a
-              class="btn btn--primary"
-              data-ticket-btn
-              href="#tickets"
-              >Tickets</a
-            >
-          </div>
-
-          <div class="show__body" data-bind-html="synopsis" data-reveal></div>
-
-          <p class="show__credit" data-bind="credit" data-reveal></p>
-
-          <aside class="tickets" id="tickets" data-reveal>
-            <h3 class="tickets__title">Tickets</h3>
-            <p class="tickets__note" data-ticket-note>
-              Tickets will be announced soon. Check back here, or reach out and
-              we’ll make sure you’re first to know.
-            </p>
-            <p class="tickets__when">
-              <strong data-bind="datetime">November 13 · 7:00 PM</strong><br />
-              <span data-bind="doors">Doors open at 6:00 PM</span><br />
-              <span data-bind="runtime">About 2 hours and 10 minutes</span><br />
-              <span data-bind="venue">The Grand | Ritz Theater, Escondido</span><br />
-              <span data-bind="venueAddress">301 E Grand Ave, Escondido, CA 92025</span>
-            </p>
-          </aside>
+            <div class="shows__actions">
+              <a
+                class="btn btn--primary"
+                data-bind-archive
+                href="shows/khayali-doctor.html"
+                >View show</a
+              >
+              <a
+                class="btn btn--ghost-ink"
+                data-bind-video
+                href="https://youtu.be/Oib6QIX5sQo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Watch reactions</a
+              >
+            </div>
+          </article>
         </div>
       </section>
 

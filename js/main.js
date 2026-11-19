@@ -2,29 +2,24 @@
   const data = window.DRAMATIC_DESI;
   if (!data) return;
 
-  const { group, show } = data;
-  const datetime = `${show.dateLabel} · ${show.timeLabel}`;
+  const { group, next, past } = data;
 
   const textMap = {
-    presenter: show.presenter,
-    title: show.title,
-    tagline: show.tagline,
-    datetime,
-    doors: show.doors,
-    runtime: show.runtime,
-    food: show.food,
-    afterShow: show.afterShow,
-    parking: show.parking,
-    seatsNote: show.seatsNote,
-    venue: show.venue,
-    venueAddress: show.venueAddress,
-    credit: show.credit,
     about: group.about,
     groupTaglineMotto: group.taglineMotto,
     groupTaglineSupport: group.taglineSupport,
-    heroCue: show.heroCue,
     instagramHandle: group.instagramHandle,
-    year: String(show.year),
+    nextCue: next && next.cue,
+    nextTitle: next && next.title,
+    nextBlurb: next && next.blurb,
+    pastPresenter: past && past.presenter,
+    pastTitle: past && past.title,
+    pastTagline: past && past.tagline,
+    pastDate: past && past.dateLabel,
+    pastVenue: past && past.venue,
+    pastCredit: past && past.credit,
+    videoTitle: past && past.videoTitle,
+    year: String((past && past.year) || new Date().getFullYear()),
   };
 
   document.querySelectorAll("[data-bind]").forEach((el) => {
@@ -35,8 +30,8 @@
   });
 
   const synopsisEl = document.querySelector('[data-bind-html="synopsis"]');
-  if (synopsisEl && Array.isArray(show.synopsis)) {
-    synopsisEl.innerHTML = show.synopsis
+  if (synopsisEl && past && Array.isArray(past.synopsis)) {
+    synopsisEl.innerHTML = past.synopsis
       .map((p) => `<p>${escapeHtml(p)}</p>`)
       .join("");
   }
@@ -56,51 +51,43 @@
   document.querySelectorAll("[data-bind-instagram]").forEach((el) => {
     if (group.instagram) el.setAttribute("href", group.instagram);
   });
-  document.querySelectorAll("[data-bind-venue-url]").forEach((el) => {
-    if (show.venueUrl) {
-      el.setAttribute("href", show.venueUrl);
+
+  document.querySelectorAll("[data-bind-archive]").forEach((el) => {
+    if (past && past.archiveUrl) el.setAttribute("href", past.archiveUrl);
+  });
+
+  document.querySelectorAll("[data-bind-video]").forEach((el) => {
+    if (past && past.videoUrl) {
+      el.setAttribute("href", past.videoUrl);
       el.setAttribute("target", "_blank");
       el.setAttribute("rel", "noopener noreferrer");
     }
   });
 
-  const ticketBtns = document.querySelectorAll("[data-ticket-btn]");
-  const ticketNote = document.querySelector("[data-ticket-note]");
-  ticketBtns.forEach((ticketBtn) => {
-    if (show.ticketUrl) {
-      ticketBtn.setAttribute("href", show.ticketUrl);
-      ticketBtn.setAttribute("target", "_blank");
-      ticketBtn.setAttribute("rel", "noopener noreferrer");
-    } else {
-      ticketBtn.setAttribute("href", "#tickets");
-      ticketBtn.removeAttribute("target");
-      ticketBtn.removeAttribute("rel");
+  const videoFrame = document.querySelector("[data-bind-video-embed]");
+  if (videoFrame && past && past.videoEmbed) {
+    videoFrame.setAttribute("src", past.videoEmbed);
+    if (past.videoTitle) {
+      videoFrame.setAttribute("title", past.videoTitle);
     }
-  });
-  if (ticketNote && show.ticketUrl) {
-    ticketNote.textContent =
-      "Tickets are available now. Grab yours before the house fills up.";
   }
 
   const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc && show.short) {
-    metaDesc.setAttribute(
-      "content",
-      `${show.short} ${datetime} | ${show.venue}`
-    );
+  if (metaDesc && group.tagline) {
+    metaDesc.setAttribute("content", group.tagline);
   }
 
   const ogDesc = document.querySelector('meta[property="og:description"]');
-  if (ogDesc && show.short) {
-    ogDesc.setAttribute("content", show.short);
+  if (ogDesc && group.tagline) {
+    ogDesc.setAttribute("content", group.tagline);
   }
 
   const ogTitle = document.querySelector('meta[property="og:title"]');
   if (ogTitle) {
-    ogTitle.setAttribute("content", `${group.name} presents ${show.title}`);
+    ogTitle.setAttribute("content", group.name);
   }
 
-  document.title = `${group.name} — ${show.title}`;
+  document.title = `${group.name} — Theatre & Short Film`;
 
   /* Header scroll state */
   const header = document.querySelector("[data-header]");

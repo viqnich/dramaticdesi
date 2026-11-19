@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Khayali Doctor — Dramatic Desi</title>
+    <meta
+      name="description"
+      content="Khayali Doctor — a Desi comedy by The Dramatic Desi. November 13, 2026 at The Grand | Ritz Theater, Escondido. Watch post-show reactions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Khayali Doctor — Dramatic Desi" />
+    <meta
+      property="og:description"
+      content="A Desi comedy that will ilaaj your soul. Presented November 13, 2026 at The Grand | Ritz Theater, Escondido."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:image"
+      content="https://dramaticdesi.com/assets/khayali-doctor-flyer.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/dd-logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header site-header--solid" data-header>
+      <a class="logo" href="../index.html">
+        <img
+          class="logo__mark"
+          src="../assets/dd-logo.png"
+          alt=""
+          width="48"
+          height="48"
+        />
+        <span class="logo__text">
+          <span>Dramatic</span>
+          <span>Desi</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#shows">Shows</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="archive" aria-labelledby="archive-title">
+        <div class="archive__inner">
+          <p class="archive__eyebrow" data-bind="pastPresenter">
+            The Dramatic Desi Presented
+          </p>
+          <h1 id="archive-title" class="archive__title" data-bind="pastTitle">
+            Khayali Doctor
+          </h1>
+          <p class="archive__tagline" data-bind="pastTagline">
+            A Desi comedy that will ilaaj your soul.
+          </p>
+          <p class="archive__meta">
+            <span data-bind="pastDate">November 13, 2026</span>
+            <span class="show__dot" aria-hidden="true">·</span>
+            <span data-bind="pastVenue"
+              >The Grand | Ritz Theater, Escondido</span
+            >
+          </p>
+
+          <figure class="archive__poster">
+            <img
+              src="../assets/khayali-doctor-flyer.png"
+              alt="Khayali Doctor poster — The Dramatic Desi"
+              width="793"
+              height="1032"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="archive__video" data-reveal>
+            <h2 data-bind="videoTitle">Post-show reactions</h2>
+            <div class="archive__video-frame">
+              <iframe
+                data-bind-video-embed
+                src="https://www.youtube.com/embed/Oib6QIX5sQo"
+                title="Post-show reactions"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p>
+              <a
+                data-bind-video
+                href="https://youtu.be/Oib6QIX5sQo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Watch on YouTube</a
+              >
+            </p>
+          </div>
+
+          <div class="archive__body" data-bind-html="synopsis" data-reveal></div>
+
+          <p class="archive__credit" data-bind="pastCredit" data-reveal></p>
+
+          <p class="archive__back">
+            <a href="../index.html">← Back to Dramatic Desi</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">
+        <a href="../index.html">
+          <img
+            class="site-footer__logo"
+            src="../assets/dd-logo.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+          <span>Dramatic Desi</span>
+        </a>
+        <span aria-hidden="true"> · </span>
+        <span data-bind="year">2026</span>
+      </p>
+      <p class="site-footer__social">
+        <a
+          href="https://www.facebook.com/dramaticdesi"
+          data-bind-facebook
+          target="_blank"
+          rel="noopener noreferrer"
+          >Facebook</a
+        >
+        <span aria-hidden="true"> · </span>
+        <a
+          href="https://www.instagram.com/dramaticdesicollective/"
+          data-bind-instagram
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span data-bind="instagramHandle">@dramaticdesicollective</span></a
+        >
+      </p>
+    </footer>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

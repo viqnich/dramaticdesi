@@ -1,6 +1,9 @@
 # Dramatic Desi
 
-Marketing site for **Dramatic Desi** — theatre and short film rooted in the South Asian Indian subcontinent community. Featured production: *Khayali Doctor* (November 13, 2026).
+Marketing site for **Dramatic Desi** — theatre and short film rooted in the South Asian Indian subcontinent community.
+
+- Home: brand hero + **Coming soon** + past productions
+- Archive: [`shows/khayali-doctor.html`](shows/khayali-doctor.html) (*Khayali Doctor*, Nov 13, 2026) with post-show video
 
 ## Local preview
 
@@ -14,24 +17,13 @@ Then visit http://localhost:8080
 
 ## Edit content
 
-Show and group copy live in [`js/content.js`](js/content.js):
+Copy lives in [`js/content.js`](js/content.js):
 
-- Update `show` fields for the next production (title, date, venue, synopsis, etc.)
-- Set `show.ticketUrl` to your ticketing link when ready (leave `""` for “tickets announced soon”)
-- Update `group.email` for the contact CTA
+- `next` — hero “Coming soon” / next production cue
+- `past` — archived show card + archive page fields (`videoEmbed`, `archiveUrl`, etc.)
+- `group.email` / social links for About
 
-## Soft launch (hero-only teaser)
-
-Previously used for a hero-only teaser (nav, CTAs, lower sections, and scrolling hidden via CSS). That block has been removed — the full site is live again. If you ever need a temporary teaser, re-add a Soft launch hide block near the top of [`css/styles.css`](css/styles.css).
-
-## Opening-week hero (temporary)
-
-Through **Khayali Doctor (Nov 13, 2026)** the hero is **event-forward** (class `hero--event` on the hero section): Friday banner, louder show title, Tickets as the primary CTA, nearly-sold-out note.
-
-**After the show, restore the brand-first hero:**
-1. In [`index.html`](index.html), remove `hero--event`, drop the `hero__banner` / `hero__show-seats` lines, and put **More info** back as the primary button (Tickets secondary).
-2. In [`js/content.js`](js/content.js), set `heroCue` back to something like `Next production · …` (and clear or soften `seatsNote` if sold out / past).
-3. Optional: remove the `.hero--event` rules from [`css/styles.css`](css/styles.css).
+When the next show is announced, update `next.title` / `next.cue` (and later promote it to a featured block or new archive entry).
 
 ## Hero backdrop (red / gold)
 
