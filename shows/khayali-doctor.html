@@ -63,25 +63,42 @@
           <p class="archive__tagline" data-bind="pastTagline">
             A Desi comedy that will ilaaj your soul.
           </p>
-          <p class="archive__meta">
-            <span data-bind="pastDate">November 13, 2026</span>
-            <span class="show__dot" aria-hidden="true">·</span>
-            <span data-bind="pastVenue"
-              >The Grand | Ritz Theater, Escondido</span
-            >
-          </p>
 
-          <figure class="archive__poster">
-            <img
-              src="../assets/khayali-doctor-flyer.png"
-              alt="Khayali Doctor poster — The Dramatic Desi"
-              width="793"
-              height="1032"
-              loading="lazy"
-            />
-          </figure>
+          <div class="archive__section" data-reveal>
+            <h2>When &amp; where</h2>
+            <p class="archive__meta">
+              <span data-bind="pastDate">November 13, 2026</span>
+              <span class="show__dot" aria-hidden="true">·</span>
+              <span data-bind="pastVenue"
+                >The Grand | Ritz Theater, Escondido</span
+              >
+            </p>
+            <figure class="archive__poster">
+              <img
+                src="../assets/khayali-doctor-flyer.png"
+                alt="Khayali Doctor poster — The Dramatic Desi"
+                width="793"
+                height="1032"
+                loading="lazy"
+              />
+            </figure>
+          </div>
 
-          <div class="archive__video" data-reveal>
+          <div class="archive__section" data-reveal>
+            <h2>Cast &amp; crew</h2>
+            <figure class="archive__booklet-page">
+              <img
+                data-bind-cast-page
+                src="../assets/khayali-doctor-cast-crew.jpg"
+                alt="Khayali Doctor cast and crew credits from the program booklet"
+                width="2415"
+                height="3795"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="archive__section archive__video" data-reveal>
             <h2 data-bind="videoTitle">Post-show reactions</h2>
             <div class="archive__video-frame">
               <iframe
@@ -104,22 +121,34 @@
             </p>
           </div>
 
-          <div class="archive__credits" data-reveal>
-            <h2>Cast &amp; crew</h2>
-            <div data-bind-html="credits"></div>
+          <div class="archive__section" data-reveal>
+            <h2>Sponsors</h2>
+            <div data-bind-html="sponsors">
+              <p class="archive__sponsors-placeholder">Coming soon.</p>
+            </div>
+          </div>
+
+          <div class="archive__section" data-reveal>
+            <h2>Program</h2>
+            <p class="archive__program-lead">
+              The full show booklet — cover, cast &amp; crew, notes, and more.
+            </p>
             <p class="archive__program">
               <a
+                class="btn btn--primary"
                 data-bind-program
-                href="../assets/khayali-doctor-credits.pdf"
+                href="../assets/khayali-doctor-program.pdf"
                 download
-                >Download program credits (PDF)</a
+                >Download full program (PDF)</a
               >
             </p>
           </div>
 
-          <div class="archive__body" data-bind-html="synopsis" data-reveal></div>
-
-          <p class="archive__credit" data-bind="pastCredit" data-reveal></p>
+          <div class="archive__section" data-reveal>
+            <h2>About the play</h2>
+            <div class="archive__body" data-bind-html="synopsis"></div>
+            <p class="archive__credit" data-bind="pastCredit"></p>
+          </div>
 
           <p class="archive__back">
             <a href="../index.html">← Back to Dramatic Desi</a>

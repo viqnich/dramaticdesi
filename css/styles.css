@@ -500,14 +500,27 @@ a:hover {
   color: var(--ink-muted);
 }
 
+.archive__section {
+  margin-top: 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.archive__section h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .archive__meta {
-  margin: 1.25rem 0 0;
+  margin: 0;
   color: var(--ink);
 }
 
 .archive__poster {
-  margin: 2rem 0 0;
-  max-width: 22rem;
+  margin: 1.5rem 0 0;
+  max-width: 18rem;
 }
 
 .archive__poster img {
@@ -517,15 +530,17 @@ a:hover {
   border-radius: 2px;
 }
 
-.archive__video {
-  margin-top: 2.5rem;
+.archive__booklet-page {
+  margin: 0;
+  max-width: 100%;
 }
 
-.archive__video h2 {
-  margin: 0 0 1rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
+.archive__booklet-page img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 12px 40px rgba(26, 22, 20, 0.12);
 }
 
 .archive__video-frame {
@@ -549,63 +564,23 @@ a:hover {
   margin: 0.85rem 0 0;
 }
 
-.archive__credits {
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
-}
-
-.archive__credits h2 {
-  margin: 0 0 1rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.archive__credits h3 {
-  margin: 1.5rem 0 0.65rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.credits__list {
+.archive__sponsors-placeholder {
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.credits__list li {
-  margin: 0.55rem 0;
   color: var(--ink-muted);
-}
-
-.credits__role {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--brass);
-}
-
-.credits__names {
-  color: var(--ink);
-}
-
-.credits__note {
-  margin: 1.5rem 0 0;
-  font-size: 0.9rem;
   font-style: italic;
+}
+
+.archive__program-lead {
+  margin: 0 0 1rem;
   color: var(--ink-muted);
 }
 
 .archive__program {
-  margin: 1.5rem 0 0;
+  margin: 0;
 }
 
 .archive__body {
-  margin-top: 2.5rem;
+  margin: 0;
 }
 
 .archive__body p {
@@ -614,7 +589,7 @@ a:hover {
 }
 
 .archive__credit {
-  margin: 2rem 0 0;
+  margin: 1.25rem 0 0;
   font-size: 0.92rem;
   color: var(--ink-muted);
   font-style: italic;
